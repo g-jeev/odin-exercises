@@ -12,7 +12,7 @@ function createGrid(size = 16) {
     square.style.height = `${squareSize}px`;
 
     square.addEventListener("mouseover", () => {
-      square.style.backgroundColor = "black";
+      square.style.backgroundColor = `rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`; 
     });
 
     container.appendChild(square);
